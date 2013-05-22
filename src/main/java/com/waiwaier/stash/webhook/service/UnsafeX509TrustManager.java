@@ -1,4 +1,4 @@
-package com.nerdwin15.stash.webhook.service;
+package com.waiwaier.stash.webhook.service;
 
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;

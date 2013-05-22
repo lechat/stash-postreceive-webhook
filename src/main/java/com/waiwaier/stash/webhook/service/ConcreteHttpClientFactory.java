@@ -1,4 +1,4 @@
-package com.nerdwin15.stash.webhook.service;
+package com.waiwaier.stash.webhook.service;
 
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;

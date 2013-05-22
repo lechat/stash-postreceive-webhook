@@ -5,7 +5,7 @@
         <version>${project.version}</version>
     </plugin-info>
     
-    <repository-hook key="webhook" name="${project.name}" class="com.nerdwin15.stash.webhook.JenkinsWebhook">
+    <repository-hook key="webhook" name="${project.name}" class="com.waiwaier.stash.webhook.Webhook">
         <description>Webhook for notifying a configured endpoint of changes to this repository.</description>
         <icon>icons/icon.png</icon>
         <config-form name="Simple Hook Config" key="simpleHook-config">

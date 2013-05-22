@@ -1,27 +1,3 @@
-# Stash Post-Receive Webhook for Jenkins
+# Stash Post-Receive Webhook
 
-After making commits to Stash, notify Jenkins that a new build has been created.
-
-## Requirements
-
-+  **Git Plugin** - Jenkins needs to have the [Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin) installed in Jenkins and the Poll SCM option must be enabled
-
-## Setup
-
-Once installed, follow these steps:
--  Navigate to a repository in Stash.
--  Hit the *Settings* link
--  In the left-navigation, hit the *Hooks* link
--  For the **Stash Post-Receive Webhook to Jenkins**, click the *Enable* button.
--  Enter the URL to your Jenkins instance
--  Enter the URL to the Git repository, as it is configured in Jenkins for your project.  If you're using ssh in Jenkins, use the SSH clone URL here.  Otherwise, use the HTTP URL.
--  Submit the form.
--  Commit some code and watch it trigger a build!
-
-## Release Notes
-### Version 1.1
--  Added an option to "Skip SSL Certificate Validation", allowing for plugin to communicate with Jenkins instance using a self-signed cert (setting is on Hooks settings for each project)
--  Handle Jenkins urls with trailing slashes more gracefully (thanks [ellingbo](https://github.com/ellingbo))
-
-### Version 1
--  Initial release
+After making commits to Stash, the specified URL will be called.

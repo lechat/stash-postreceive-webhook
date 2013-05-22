@@ -2,17 +2,17 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.nerdwin15.stash</groupId>
-	<artifactId>stash-webhook-jenkins</artifactId>
+	<groupId>com.waiwaier.stash</groupId>
+	<artifactId>stash-webhook</artifactId>
 	<version>1.2-SNAPSHOT</version>
 
 	<organization>
-		<name>Nerdwin15</name>
-		<url>http://www.nerdwin15.com/</url>
+		<name>yylyyl</name>
+		<url>http://waiwaier.com/</url>
 	</organization>
 
-	<name>Stash Post-Receive Webhook to Jenkins</name>
-	<description>A post-receive webhook that fires a GET on a remote Jenkins URL.</description>
+	<name>Stash Post-Receive Webhook</name>
+	<description>A post-receive webhook that calls a remote URL.</description>
 	<packaging>atlassian-plugin</packaging>
 
 	<dependencyManagement>
@@ -133,11 +133,5 @@
 		<amps.version>4.1.4</amps.version>
 		<plugin.testrunner.version>1.1</plugin.testrunner.version>
 	</properties>
-
-	<scm>
-		<connection>scm:git:ssh://git@github.com/Nerdwin15/stash-jenkins-postreceive-webhook.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/Nerdwin15/stash-jenkins-postreceive-webhook.git</developerConnection>
-		<url>https://github.com/Nerdwin15/stash-jenkins-postreceive-webhook</url>
-	</scm>
 
 </project>
